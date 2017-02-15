@@ -1,0 +1,112 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+
+ @import "font-awesome-sprockets";
+ @import "font-awesome";
+
+
+ @font-face {
+   font-family: 'CaviarDreams';
+   src: font-url('CaviarDreams_Bold.ttf');
+   src: font-url('CaviarDreams_Bold.ttf?iefix') format('truetype');
+ }
+
+
+body {
+  background-color: #B1D7C8;
+}
+
+
+/* Navbar */
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(white, 0.3);
+    text-transform: uppercase;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #8A7D6D;
+    .navbar-toggle {
+        padding: 4px 6px;
+        font-size: 16px;
+        color: white;
+        &:focus,
+        &:active {
+            outline: none;
+        }
+    }
+    .navbar-brand {
+        font-weight: 700;
+        &:focus {
+            outline: none;
+        }
+    }
+    a {
+        color: white;
+    }
+
+.nav {
+    li {
+        a {
+            -webkit-transition: background .3s ease-in-out;
+            -moz-transition: background .3s ease-in-out;
+            transition: background .3s ease-in-out;
+            &:hover {
+                color: rgba(white, 0.8);
+                outline: none;
+                background-color: transparent;
+            }
+            &:focus,
+            &:active {
+                outline: none;
+                background-color: transparent;
+            }
+        }
+        &.active {
+            outline: none;
+            a {
+                background-color: rgba(white, 0.3);
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+     }
+  }
+}
+
+
+
+
+
+ /* Small devices (tablets, 768px and up) */
+  @media (max-width:768px) {
+
+  }
+
+
+ /* Medium devices (desktops, 992px and up) */
+  @media (min-width:992px) {
+
+  }
+
+
+ /* Large devices (large desktops, 1200px and up) */
+  @media (min-width:1200px) {
+
+  }

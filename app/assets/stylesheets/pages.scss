@@ -1,0 +1,85 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* Home Page */
+
+img {
+
+  max-width: 100%;
+  height: auto;
+}
+
+.intro {
+     display: table;
+     width: 100%;
+     height: auto;
+     padding: 100px 0;
+     text-align: center;
+     color: black;
+		 background: image-url("") no-repeat bottom center scroll;
+		 background-color: #B1D7C8;
+		 -webkit-background-size: cover;
+		 -moz-background-size: cover;
+		 background-size: cover;
+		 -o-background-size: cover;
+}
+
+.jumbotron {
+    background-color:transparent !important;
+}
+
+/* Font for "Welcome!" */
+.Hi {
+  font-family: 'CaviarDreams',sans-serif;
+  color: #2E6AB0;
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.text-muted {
+  color: #776D60;
+}
+
+.homeparagraph{
+  color: #fff;
+}
+
+
+/* Footer */
+.footer {
+   text-align: center;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .featurette-heading {
+    font-size: 50px;
+  }
+  .logo-heading {
+      background-size: 290px 290px;
+    }
+
+}
+
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
