@@ -5,7 +5,6 @@
 /* Home Page */
 
 img {
-
   max-width: 100%;
   height: auto;
 }
@@ -32,8 +31,22 @@ img {
 /* Font for "Welcome!" */
 .Hi {
   font-family: 'CaviarDreams',sans-serif;
-  color: #2E6AB0;
 }
+
+/* Button */
+.btn-default,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:active,
+.btn-default.active,
+.btn-default:visited {
+    background-color: #8A7D6D;
+    color:#fff;
+    border: none;
+    outline: none;
+}
+
+
 
 /* Featurettes
 ------------------------- */
@@ -49,14 +62,20 @@ img {
   letter-spacing: -1px;
 }
 
+/* Span class */
 .text-muted {
   color: #776D60;
 }
 
+/* Paragraph styling for each section */
 .homeparagraph{
   color: #fff;
 }
 
+/* links in paragraphs */
+a.linkvinyl:link {color:#79745e;}
+a.linkvinyl:visited {color:#79745e;}
+a.linkvinyl:hover {color:#688c7e;}
 
 /* Footer */
 .footer {
