@@ -6,6 +6,7 @@
                  <div class="col-md-8 col-md-offset-2">
                      <img class="logo-heading"><%= image_tag("Bayside Logo.svg", alt: "logo-img", height: 720, width: 720) %></img>
                  </div>
+                 <% if !user_signed_in? %>
                  <div class="jumbotron">
                  <h1 class="Hi">Welcome!</h1>
                  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
@@ -15,6 +16,7 @@
                    <button class="button"><span>Hit-or-Miss </span></button>
                  </p>
                </div>
+               <% end %>
              </div>
          </div>
      </div>
