@@ -3,7 +3,9 @@
      <div class="intro-body">
          <div class="container">
              <div class="row">
-              
+                 <div class="col-md-8 col-md-offset-2">
+                     <img class="logo-heading"><%= image_tag("BaysideLogo.svg", alt: "logo-img", height: 720, width: 720) %></img>
+                 </div>
                  <% if user_signed_in? %>
                  <div class="jumbotron">
                  <h1 class="Hi">Welcome Back!</h1>
