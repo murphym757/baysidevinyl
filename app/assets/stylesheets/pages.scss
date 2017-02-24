@@ -16,6 +16,7 @@ img {
      padding: 100px 0;
      text-align: center;
      color: white;
+     text-shadow: 5px 10px 10px black;
 		 background: image-url("Baysidehome.jpg") no-repeat bottom center scroll;
 		 background-color: #B1D7C8;
 		 -webkit-background-size: cover;
@@ -38,6 +39,7 @@ img {
 .button {
   border-radius: 4px;
   background-color: #6D5E4C;
+  box-shadow: 4px 5px 4px black;
   border: none;
   color: #FFFFFF;
   text-align: center;
