@@ -1,16 +1,31 @@
-<h2>Resend confirmation instructions</h2>
-
-<%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
+<%= bootstrap_form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
   <%= devise_error_messages! %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) %>
-  </div>
 
-  <div class="actions">
-    <%= f.submit "Resend confirmation instructions" %>
-  </div>
-<% end %>
+<header class="formpage">
+    <div class="col-md-8 col-md-offset-2">
+        <img class="logo-heading-form"><%= image_tag("Bayside Logo.svg", alt: "logo-img", height: 720, width: 720) %></img>
+    </div>
+    <div class="entirepanel">
+        <div class="container .col-xs-12 .col-sm-6 .col-md-8">
+            <div class="row">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Resend confirmation instructions<</div>
+                    <div class="panel-body">
+                        <div class="field">
+                            <%= f.email_field :email, autofocus: true, value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email), placeholder: "Enter email" %>
+                        </div>
 
-<%= render "devise/shared/links" %>
+                        <div class="actions">
+                          <%= f.submit "Resend confirmation instructions" %>
+                        </div>
+                      <% end %>
+
+                        <%= render "devise/shared/links" %>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </header>
