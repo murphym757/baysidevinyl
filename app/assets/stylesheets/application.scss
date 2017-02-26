@@ -78,18 +78,29 @@ body {
             }
         }
         &.active {
-            outline: none;
-            a {
-                background-color: rgba(white, 0.3);
-                &:hover {
-                    color: #6D5E4C;
-                }
-
-            }
+    outline: none;
+    a {
+        background-color: rgba(white, 0.3);
+        &:hover {
+            color: white;
         }
-     }
-  }
+    }
 }
+}
+}
+
+      @media(min-width:768px) {
+        padding: 20px 0;
+        border-bottom: none;
+        letter-spacing: 1px;
+          &.top-nav-collapse {
+          padding: 0;
+          background: #B1D7C8;
+          border-bottom: 1px solid rgba(white, 0.3);
+          }
+
+        }
+      }
 
 
   /*form styling */
