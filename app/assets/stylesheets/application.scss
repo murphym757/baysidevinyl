@@ -35,73 +35,95 @@ body {
 }
 
 /* Navbar */
-.navbar-custom {
-    margin-bottom: 0;
-    border-bottom: 1px solid rgba(#B1D7C8, 0.3);
-    text-transform: uppercase;
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #B1D7C8;
-    .navbar-toggle {
-        padding: 4px 6px;
-        font-size: 16px;
-        color: #6D5E4C;
-        &:focus,
-        &:active {
-            outline: none;
-        }
-    }
-    .navbar-brand {
-        font-weight: 700;
-        &:focus {
-            outline: none;
-        }
-    }
-    a {
-        color: #6D5E4C;
-    }
-
-.nav {
-    li {
-        a {
-            -webkit-transition: background .3s ease-in-out;
-            -moz-transition: background .3s ease-in-out;
-            transition: background .3s ease-in-out;
-            &:hover {
-                color: rgba(white, 0.8);
-                outline: none;
-                background-color: transparent;
-            }
-            &:focus,
-            &:active {
-                outline: none;
-                background-color: transparent;
-            }
-        }
-        &.active {
-    outline: none;
-    a {
-        background-color: rgba(white, 0.3);
-        &:hover {
-            color: white;
-        }
-    }
+.navbar-default {
+  background-color: #6d5e4c;
+  border-color: #6d5e4c;
 }
+.navbar-default .navbar-brand {
+  color: #b1d7c8;
 }
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #688c7e;
+}
+.navbar-default .navbar-text {
+  color: #b1d7c8;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #b1d7c8;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #688c7e;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #6d5e4c;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: #b1d7c8;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #688c7e;
+  background-color: #6d5e4c;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color: #6d5e4c;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #688c7e;
+  background-color: #6d5e4c;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #688c7e;
+  background-color: #6d5e4c;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #688c7e;
+  background-color: #6d5e4c;
+}
+.navbar-default .navbar-toggle {
+  border-color: #6d5e4c;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #6d5e4c;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #b1d7c8;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #b1d7c8;
+}
+.navbar-default .navbar-link {
+  color: #b1d7c8;
+}
+.navbar-default .navbar-link:hover {
+  color: #688c7e;
 }
 
-      @media(min-width:768px) {
-        padding: 20px 0;
-        border-bottom: none;
-        letter-spacing: 1px;
-          &.top-nav-collapse {
-          padding: 0;
-          background: #B1D7C8;
-          border-bottom: 1px solid rgba(white, 0.3);
-          }
-
-        }
-      }
-
+@media (max-width: 768px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #b1d7c8;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #688c7e;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #688c7e;
+    background-color: #6d5e4c;
+  }
+}
 
   /*form styling */
   .formpage {
