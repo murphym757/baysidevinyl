@@ -38,30 +38,6 @@ img {
   font-size: 15px;
 }
 
-/* Button for Hit-or-Miss app */
-.btn {
-  border-radius: 4px;
-  background-color: #6D5E4C;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 28px;
-  padding: 20px;
-  width: 200px;
-  cursor: pointer;
-  margin: 5px;
-  font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-
-.btn-primary, .btn-primary:visited {
-    background-color: #6D5E4C ;
-    border-color: #B1D7C8;
-}
-
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
-    background: #688C7E !important;
-    border-color: #B1D7C8;
-}
 
 /* Featurettes
 ------------------------- */

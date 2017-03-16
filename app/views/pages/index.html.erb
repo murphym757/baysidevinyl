@@ -12,9 +12,6 @@
                  <p class="lead">We are glad to have you back, (username).</p>
                  <hr class="my-4">
                  <p class="greetmessage2">You know how this works, right? If not, then that's alright. Simply click on the Hit-or-Miss button below to go directly to the app.<br>You can also edit your profile clicking on “My Profile” in the navigation bar at the top of the page.</p>
-                 <div class="jumbo-button">
-                   <%= link_to "Hit-or-Miss", new_user_session_path, class: "btn btn-primary btn-lg" %>
-                 </div>
                </div>
                <% else %>
                <div class="jumbotron">
@@ -22,9 +19,6 @@
                <p class="lead">This is Bayside Vinyl and we are looking to change your idea of vinyl record shopping.</p>
                <hr class="my-4">
                <p class="greetmessage2">You can sign in/sign up with the button below. You can also go directly to app with the Hit-or-Miss button and you do not need to sign up to use it. However, you do need to sign in/sign up to store your favorite vinyl to your profile.</p>
-               <div class="jumbo-button">
-                 <%= link_to "Hit-or-Miss", new_user_session_path, class: "btn btn-primary btn-lg" %>
-               </div>
              </div>
                <% end %>
              </div>
@@ -40,7 +34,42 @@
 
   </div><!-- /.row -->
 
+  <!-- Modal -->
+  <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Sign In</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+          <%= render "devise/sessions/new" %>
+          </div>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Sign In</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+          <%= render "devise/registrations/new" %>
+          </div>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- START THE FEATURETTES -->
 
