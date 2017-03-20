@@ -8,15 +8,16 @@ class User < ApplicationRecord
 
   attr_accessor :login
 
+  validates_format_of :username, with: /^[a-zA-Z0-9_\.]*$/, :multiline => true
+
+  validates :username,
+    :presence => true,
+    :uniqueness => {
+      :case_sensitive => false
+    }
 end
 
-validates_format_of :username, with: /^[a-zA-Z0-9_\.]*$/, :multiline => true
 
-validates :username,
-  :presence => true,
-  :uniqueness => {
-    :case_sensitive => false
-  }
 
 def self.find_first_by_auth_conditions(warden_conditions)
   conditions = warden_conditions.dup
