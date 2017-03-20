@@ -4,12 +4,14 @@
       <div class="navbar-header">
 
         <% if user_signed_in? %>
+        <div class="chip">
         <a class="navbar-brand" href="#">
-             <%= link_to "Welcome Back", pages_path, class: "navbar-brand" %>
+             <li class="fa fa-home" href="/pages"></li><%= link_to "Bayside Vinyl", pages_path, class: "navbar-brand" %>
         </a>
+      </div>
         <% else %>
-        <a class="navbar-brand" href="#">
-            <%= link_to "Welcome, Guest", pages_path, class: "navbar-brand" %>
+        <a class="navbar-brand" href="/pages">
+            <li class="fa fa-home" href="/pages"></li><%= link_to "Bayside Vinyl", pages_path, class: "navbar-brand" %>
         </a>
         <% end %>
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
