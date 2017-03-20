@@ -8,7 +8,7 @@ class User < ApplicationRecord
 
   attr_accessor :login
 
-  validates_format_of :username, with: /^[a-zA-Z0-9_\.]*$/, :multiline => true
+validate :validate_username
 
   validates :username,
     :presence => true,
@@ -17,6 +17,14 @@ class User < ApplicationRecord
     }
 end
 
+
+
+
+def validate_username
+  if User.where(email: username).exists?
+    errors.add(:username, :invalid)
+  end
+end
 
 
 def self.find_first_by_auth_conditions(warden_conditions)
