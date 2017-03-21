@@ -13,7 +13,7 @@ gem 'font-awesome-sass'
 gem 'variables'
 gem 'devise'
 gem 'bootstrap_form'
-
+gem 'paperclip', '~> 5.1'
 
 
 
