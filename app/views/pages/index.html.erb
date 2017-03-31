@@ -36,26 +36,8 @@
 
   </div><!-- /.row -->
 
-  <!-- Modal -->
 
 
-  <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel">Sign In</h4>
-        </div>
-        <div class="modal-body">
-          <div class="form-group">
-          <%= render "devise/registrations/new" %>
-          </div>
-        </div>
-        <div class="modal-footer">
-        </div>
-      </div>
-    </div>
-  </div>
 
 
 <!-- Hit or Miss app -->
@@ -66,27 +48,9 @@
 
   </div>
   <div class="col-md-5 col-md-pull-7">
+    <a href="#" data-toggle="modal" data-target="#HOMFrontModal">
     <img class="featurette-image img-responsive center-block"><%= image_tag("hit-or-miss.svg", alt: "square2-img", height: 500, width: 500) %></img>
-  </div>
-</div>
-
-<div class="modal fade" id="HOMFrontModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Hit-or-Miss</h4>
-      </div>
-      <div class="modal-body">
-        <div class="form-group">
-        <%= render "vinyls/HOMfront" %>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-custom btn-lg">Begin</button>
-       <button type="button" class="btn btn-custom btn-lg" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+  </a>
   </div>
 </div>
 
@@ -157,3 +121,24 @@
 </footer>
 
 </div><!-- /.container -->
+
+<!-- Modal -->
+<div class="modal fade" id="HOMFrontModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Hit-or-Miss</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+        <%= render "vinyls/HOMfront" %>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-custom btn-lg">Begin</button>
+       <button type="button" class="btn btn-custom btn-lg" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
