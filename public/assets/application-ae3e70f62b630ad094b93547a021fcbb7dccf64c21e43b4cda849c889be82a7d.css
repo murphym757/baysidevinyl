@@ -14,7 +14,7 @@ img {
   text-align: center;
   color: black;
   background: url(/assets/Baysidehome-e460a018ba83d402d1e77827ea5831eac29ee0d22b4deecb436e82218a2b641e.jpg) no-repeat bottom center scroll;
-  background-color: #B1D7C8;
+  background-color: #B8DACC;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -12711,7 +12711,7 @@ button.close {
 }
 /* line 34, /Users/mauricemurphy/vinyl_website/app/assets/stylesheets/application.scss */
 body {
-  background-color: #B1D7C8;
+  background-color: #B8DACC;
 }
 
 /* Navbar */
@@ -12785,7 +12785,7 @@ body {
   text-align: center;
   color: black;
   background: url(/assets/Baysidehome-e460a018ba83d402d1e77827ea5831eac29ee0d22b4deecb436e82218a2b641e.jpg) no-repeat bottom center scroll;
-  background-color: #B1D7C8;
+  background-color: #B8DACC;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -12816,7 +12816,7 @@ body {
 
 /* line 136, /Users/mauricemurphy/vinyl_website/app/assets/stylesheets/application.scss */
 .panel-body {
-  background-color: #B1D7C8;
+  background-color: #B8DACC;
 }
 
 /* Small devices (tablets, 768px and up) */

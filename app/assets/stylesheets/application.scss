@@ -31,7 +31,7 @@
 
 
 body {
-  background-color: #B1D7C8;
+  background-color: #B8DACC;
 }
 
 /* Bootstrap
@@ -44,7 +44,7 @@ body {
   font-family: 'CaviarDreams',sans-serif;
 }
 .navbar-default .navbar-brand {
-  color: #b1d7c8;
+  color: #B8DACC;
 
 }
 .navbar-default .navbar-brand:hover,
@@ -52,10 +52,10 @@ body {
   color: #688c7e;
 }
 .navbar-default .navbar-text {
-  color: #b1d7c8;
+  color: #B8DACC;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #b1d7c8;
+  color: #B8DACC;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -65,7 +65,7 @@ body {
   background-color: #6d5e4c;
 }
 .navbar-default .navbar-nav > li > .dropdown-menu > li > a {
-  color: #b1d7c8;
+  color: #B8DACC;
 }
 .navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
@@ -101,14 +101,14 @@ body {
   background-color: #6d5e4c;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #b1d7c8;
+  background-color: #B8DACC;
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #b1d7c8;
+  border-color: #B8DACC;
 }
 .navbar-default .navbar-link {
-  color: #b1d7c8;
+  color: #B8DACC;
 }
 .navbar-default .navbar-link:hover {
   color: #688c7e;
@@ -116,7 +116,7 @@ body {
 
 @media (max-width: 768px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #b1d7c8;
+    color: #B8DACC;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -143,11 +143,11 @@ body {
        border-top-right-radius: 5px;
    }
    .modal-title {
-     color: #B1D7C8;
+     color: #B8DACC;
    }
    .modal-body
 {
-    background-color: #B1D7C8;
+    background-color: #B8DACC;
 }
 
 .modal-content
@@ -170,9 +170,18 @@ body {
     -moz-border-radius-bottomright: 5px;
 }
 
+.jumbotron-2
+{
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+  text-align: center;
+}
+
 /* Bootstrap Button */
 .btn-custom {
-  color: #B1D7C8;
+  color: #B8DACC;
   background-color: #6D5E4C;
 }
 
@@ -181,7 +190,7 @@ body {
 .btn-custom:active,
 .btn-custom.active,
 .open .dropdown-toggle.btn-custom {
-  color: #B1D7C8;
+  color: #B8DACC;
   background-color: #688c7e;
 }
 
@@ -211,7 +220,7 @@ fieldset[disabled] .btn-custom.active {
 
 .btn-custom .badge {
   color: #6D5E4C;
-  background-color: #B1D7C8;
+  background-color: #B8DACC;
 }
 
 /*---------------------------------*/
@@ -225,7 +234,7 @@ fieldset[disabled] .btn-custom.active {
     text-align: center;
     color: black;
     background: image-url("") no-repeat bottom center scroll;
-    background-color: #B1D7C8;
+    background-color: #B8DACC;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -239,7 +248,7 @@ fieldset[disabled] .btn-custom.active {
   text-align: center;
   color: black;
   background: image-url("") no-repeat bottom center scroll;
-  background-color: #B1D7C8;
+  background-color: #B8DACC;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -278,7 +287,7 @@ fieldset[disabled] .btn-custom.active {
   }
 
   .panel-body {
-    background-color: #B1D7C8;
+    background-color: #B8DACC;
   }
 
 

@@ -1,0 +1,28 @@
+<header class="formpage">
+    <div class="col-md-8 col-md-offset-2">
+        <img class="logo-heading-form"><%= image_tag("hit-or-miss.svg", alt: "logo-img", height: 720, width: 720) %></img>
+    </div>
+    </header>
+
+<% if user_signed_in? %>
+    <div class="jumbotron-2">
+      <h1 class="Hi">Welcome, <%= current_user.username %>!</h1>
+      <hr class="my-4">
+      <p class="lead">Don't let the name fool you, the hit-or-miss vinyl selector is an absolute hit (pun intended).
+                      With the use of Ruby on Rails, as well as, JavaScript (in conjunction with Discogs' API) the Hit-or-Me app
+                      will take the user through the various steps to record shopping. From album to artist, the user is given the
+                      opportunity to find the ideal record. In the event that the user is unable to find a record that fits their
+                      liking, a random album will be selected for them (based on the genre of their choosing). That being said, please
+                      feel free to give it a try. Simply press the begin button down below.<br> Enjoy</p>
+  </div>
+  <% else %>
+  <div class="jumbotron-2">
+    <h1 class="Hi">Welcome!</h1>
+    <hr class="my-4">
+    <p class="lead">Don't let the name fool you, the hit-or-miss vinyl selector is an absolute hit (pun intended).
+                    With the use of Ruby on Rails, as well as, JavaScript (in conjunction with Discogs' API) the Hit-or-Me app
+                    will take the user through the various steps to record shopping. From album to artist, the user is given the
+                    opportunity to find the ideal record. In the event that the user is unable to find a record that fits their
+                    liking, a random album will be selected for them (based on the genre of their choosing). That being said, please
+                    feel free to give it a try. Simply press the begin button down below.<br> Enjoy</p>
+  <% end %>

@@ -14,7 +14,7 @@ img {
   text-align: center;
   color: white;
   background: url(/assets/Baysidehome-90a4805a61512373ab24fa2d5cdeeb2f739b60c75ce6a76d1353cc8bf98528c9.jpg) no-repeat bottom center scroll;
-  background-color: #B1D7C8;
+  background-color: #B8DACC;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -56,13 +56,13 @@ img {
 /* line 57, /Users/mauricemurphy/vinyl_website/app/assets/stylesheets/pages.scss */
 .btn-primary, .btn-primary:visited {
   background-color: #6D5E4C;
-  border-color: #B1D7C8;
+  border-color: #B8DACC;
 }
 
 /* line 62, /Users/mauricemurphy/vinyl_website/app/assets/stylesheets/pages.scss */
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
   background: #688C7E !important;
-  border-color: #B1D7C8;
+  border-color: #B8DACC;
 }
 
 /* Featurettes
@@ -12700,7 +12700,7 @@ button.close {
 }
 /* line 34, /Users/mauricemurphy/vinyl_website/app/assets/stylesheets/application.scss */
 body {
-  background-color: #B1D7C8;
+  background-color: #B8DACC;
 }
 
 /* Navbar */
@@ -12712,7 +12712,7 @@ body {
 
 /* line 43, /Users/mauricemurphy/vinyl_website/app/assets/stylesheets/application.scss */
 .navbar-default .navbar-brand {
-  color: #b1d7c8;
+  color: #B8DACC;
 }
 
 /* line 46, /Users/mauricemurphy/vinyl_website/app/assets/stylesheets/application.scss */
@@ -12723,12 +12723,12 @@ body {
 
 /* line 50, /Users/mauricemurphy/vinyl_website/app/assets/stylesheets/application.scss */
 .navbar-default .navbar-text {
-  color: #b1d7c8;
+  color: #B8DACC;
 }
 
 /* line 53, /Users/mauricemurphy/vinyl_website/app/assets/stylesheets/application.scss */
 .navbar-default .navbar-nav > li > a {
-  color: #b1d7c8;
+  color: #B8DACC;
 }
 
 /* line 56, /Users/mauricemurphy/vinyl_website/app/assets/stylesheets/application.scss */
@@ -12744,7 +12744,7 @@ body {
 
 /* line 63, /Users/mauricemurphy/vinyl_website/app/assets/stylesheets/application.scss */
 .navbar-default .navbar-nav > li > .dropdown-menu > li > a {
-  color: #b1d7c8;
+  color: #B8DACC;
 }
 
 /* line 66, /Users/mauricemurphy/vinyl_website/app/assets/stylesheets/application.scss */
@@ -12796,18 +12796,18 @@ body {
 
 /* line 99, /Users/mauricemurphy/vinyl_website/app/assets/stylesheets/application.scss */
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #b1d7c8;
+  background-color: #B8DACC;
 }
 
 /* line 102, /Users/mauricemurphy/vinyl_website/app/assets/stylesheets/application.scss */
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #b1d7c8;
+  border-color: #B8DACC;
 }
 
 /* line 106, /Users/mauricemurphy/vinyl_website/app/assets/stylesheets/application.scss */
 .navbar-default .navbar-link {
-  color: #b1d7c8;
+  color: #B8DACC;
 }
 
 /* line 109, /Users/mauricemurphy/vinyl_website/app/assets/stylesheets/application.scss */
@@ -12818,7 +12818,7 @@ body {
 @media (max-width: 768px) {
   /* line 114, /Users/mauricemurphy/vinyl_website/app/assets/stylesheets/application.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #b1d7c8;
+    color: #B8DACC;
   }
 
   /* line 117, /Users/mauricemurphy/vinyl_website/app/assets/stylesheets/application.scss */
@@ -12845,7 +12845,7 @@ body {
   text-align: center;
   color: black;
   background: url() no-repeat bottom center scroll;
-  background-color: #B1D7C8;
+  background-color: #B8DACC;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -12876,7 +12876,7 @@ body {
 
 /* line 169, /Users/mauricemurphy/vinyl_website/app/assets/stylesheets/application.scss */
 .panel-body {
-  background-color: #B1D7C8;
+  background-color: #B8DACC;
 }
 
 /* Small devices (tablets, 768px and up) */

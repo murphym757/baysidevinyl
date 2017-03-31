@@ -14,7 +14,7 @@ img {
   text-align: center;
   color: black;
   background: url() no-repeat bottom center scroll;
-  background-color: #B1D7C8;
+  background-color: #B8DACC;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -12648,7 +12648,7 @@ button.close {
 }
 /* line 33, /Users/mauricemurphy/vinyl_website/app/assets/stylesheets/application.scss */
 body {
-  background-color: #B1D7C8;
+  background-color: #B8DACC;
 }
 
 /* Navbar */

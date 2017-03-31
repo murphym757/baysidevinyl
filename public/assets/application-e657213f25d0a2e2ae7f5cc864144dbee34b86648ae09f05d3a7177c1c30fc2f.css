@@ -14,7 +14,7 @@ img {
   text-align: center;
   color: white;
   background: url(/assets/Baysidehome-90a4805a61512373ab24fa2d5cdeeb2f739b60c75ce6a76d1353cc8bf98528c9.jpg) no-repeat bottom center scroll;
-  background-color: #B1D7C8;
+  background-color: #B8DACC;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -56,13 +56,13 @@ img {
 /* line 57, /Users/mauricemurphy/vinyl_website/app/assets/stylesheets/pages.scss */
 .btn-primary, .btn-primary:visited {
   background-color: #6D5E4C;
-  border-color: #B1D7C8;
+  border-color: #B8DACC;
 }
 
 /* line 62, /Users/mauricemurphy/vinyl_website/app/assets/stylesheets/pages.scss */
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
   background: #688C7E !important;
-  border-color: #B1D7C8;
+  border-color: #B8DACC;
 }
 
 /* Featurettes
@@ -12700,7 +12700,7 @@ button.close {
 }
 /* line 34, /Users/mauricemurphy/vinyl_website/app/assets/stylesheets/application.scss */
 body {
-  background-color: #B1D7C8;
+  background-color: #B8DACC;
 }
 
 /* Navbar */
@@ -12710,7 +12710,7 @@ body {
   border-bottom: 1px solid rgba(177, 215, 200, 0.3);
   text-transform: uppercase;
   font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-  background-color: #B1D7C8;
+  background-color: #B8DACC;
 }
 /* line 45, /Users/mauricemurphy/vinyl_website/app/assets/stylesheets/application.scss */
 .navbar-custom .navbar-toggle {
@@ -12773,7 +12773,7 @@ body {
   /* line 97, /Users/mauricemurphy/vinyl_website/app/assets/stylesheets/application.scss */
   .navbar-custom.top-nav-collapse {
     padding: 0;
-    background: #B1D7C8;
+    background: #B8DACC;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 }
@@ -12788,7 +12788,7 @@ body {
   text-align: center;
   color: black;
   background: url() no-repeat bottom center scroll;
-  background-color: #B1D7C8;
+  background-color: #B8DACC;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -12819,7 +12819,7 @@ body {
 
 /* line 147, /Users/mauricemurphy/vinyl_website/app/assets/stylesheets/application.scss */
 .panel-body {
-  background-color: #B1D7C8;
+  background-color: #B8DACC;
 }
 
 /* Small devices (tablets, 768px and up) */
