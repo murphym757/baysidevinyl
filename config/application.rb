@@ -13,6 +13,7 @@ module VinylWebsite
     # -- all .rb files in that directory are automatically loaded.
 
     config.assets.enabled = true
+    config.serve_static_assets = true
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
     config.assets.initialize_on_precompile = false
   end
