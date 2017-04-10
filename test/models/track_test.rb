@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class VinylsControllerTest < ActionDispatch::IntegrationTest
+class TrackTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

@@ -1,0 +1,59 @@
+<%= bootstrap_form_for @track, html: { multipart: true } do |f| %>
+<% if track.errors.any? %>
+    <div id="error_explanation">
+      <h2 class= "page-title"><%= pluralize(track.errors.count, "error") %> prohibited this track from being saved:</h2>
+
+      <ul>
+      <% track.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <header class="formpage2">
+      <div class="col-md-8 col-md-offset-2">
+          <img class="logo-heading-form2"><%= image_tag("Bayside Logo.svg", alt: "logo-img", height: 720, width: 720) %></img>
+      </div>
+        <div class="entirepanel2">
+          <div class="container .col-xs-12 .col-sm-6 .col-md-8">
+            <div class="row">
+              <div class="panel panel-default">
+                <div class="panel-heading">Track Information</div>
+                  <div class="panel-body">
+                    <div class="field">
+                      <%= f.text_field :artist, autofocus: true, placeholder: "Enter Artist" %>
+                    </div>
+
+                    <div class="field">
+                      <%= f.text_field :album, autofocus: true, placeholder: "Enter Album"  %>
+                    </div>
+
+                    <div class="field">
+                      <%= f.text_field :song, autofocus: true, placeholder: "Enter Song"  %>
+                    </div>
+
+                    <div class="field">
+                      <%= f.text_field :genre, autofocus: true, placeholder: "Enter Genre"  %>
+                    </div>
+
+                    <div class="field">
+                      <%= f.text_field :year, autofocus: true, placeholder: "Enter Year"  %>
+                    </div>
+
+                    <div class="field">
+                      <%= f.file_field :image, autofocus: true  %>
+                    </div>
+
+                    <div class="actions">
+                      <%= f.submit %>
+                    </div>
+                  <% end %>
+
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </header>

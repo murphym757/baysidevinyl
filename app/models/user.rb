@@ -4,7 +4,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, authentication_keys: {email: true, login: false}
 
-  has_many :vinyls
+  has_many :tracks
 
 
 
