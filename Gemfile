@@ -18,6 +18,7 @@ gem 'paperclip', '~> 5.1'
 
 
 
+
 group :development, :test do
   gem 'byebug', platform: :mri
 end
