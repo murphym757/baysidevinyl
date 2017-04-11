@@ -1,36 +1,48 @@
-<div class="container">
- <%= image_tag @track.image.url(:medium) %>
+<header class="intro">
+    <div class="intro-body">
+        <div class="container">
+          <div class="row">
+           <%= image_tag @track.image.url(:medium) %>
 
-<p>
-  <strong>Artist:</strong>
-  <%= @track.artist %>
-</p>
+          <p>
+            <strong>Artist:</strong>
+            <%= @track.artist %>
+          </p>
 
-<p>
-  <strong>Album:</strong>
-  <%= @track.album %>
-</p>
+          <p>
+            <strong>Album:</strong>
+            <%= @track.album %>
+          </p>
 
-<p>
-  <strong>Song:</strong>
-  <%= @track.song %>
-</p>
+          <p>
+            <strong>Song:</strong>
+            <%= @track.song %>
+          </p>
 
-<p>
-  <strong>Genre:</strong>
-  <%= @track.genre %>
-</p>
+          <p>
+            <strong>Genre:</strong>
+            <%= @track.genre %>
+          </p>
 
-<p>
-  <strong>Year:</strong>
-  <%= @track.year %>
-</p>
+          <p>
+            <strong>Year:</strong>
+            <%= @track.year %>
+          </p>
 
-<p>
-  <strong>Posted Creator:</strong>
-  <%= @track.user.username %>
-</p>
+          <p>
+            <strong>Post Creator:</strong>
+            <%= @track.user.username %>
+          </p>
 
-<%= link_to 'Edit', edit_track_path(@track) %> |
-<%= link_to 'Back', tracks_path %>
-</div>
+          <audio controls>
+  <source src="http://www.w3schools.com/html/horse.ogg" type="audio/ogg" />
+  <source src="http://www.w3schools.com/html/horse.mp3" type="audio/mpeg" />
+  <a href="http://www.w3schools.com/html/horse.mp3">horse</a>
+</audio>
+
+          <%= link_to 'Edit', edit_track_path(@track) %> |
+          <%= link_to 'Back', tracks_path %>
+          </div>
+        </div>
+    </div>
+</header>

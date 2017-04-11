@@ -1,6 +1,4 @@
-<p id="notice"><%= notice %></p>
 
-<h1>Tracks</h1>
 
 <table>
   <thead>
@@ -14,13 +12,21 @@
     </tr>
   </thead>
 
-  <% @tracks.each do |track| %>
-  <div class="col-xs-6 col-md-3">
-    <div class="thumbnail">
-      <%= link_to (image_tag track.image.url(:medium), class: 'image'), track %>
-    </div>
-  </div>
-<% end %>
+
+      <div class="intro-body">
+          <div class="container">
+        <div class="row">
+        <% @tracks.each do |track| %>
+        <div class="col-xs-6 col-lg-3">
+          <div class="thumbnail">
+            <%= link_to (image_tag track.image.url(:medium), class: 'image'), track %>
+          </div>
+        </div>
+      <% end %>
+      </div>
+      </div>
+      </div>
+
 
 <br>
 
