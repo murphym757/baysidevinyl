@@ -1,7 +1,10 @@
 // Place all the styles related to the Tracks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+$white: #FFFFFF;
+$highlight: #B8DACC;
+$dark: #22292e;
+$light: #EDEFF5;
 
 .intro-body{
   display: table;
@@ -10,3 +13,122 @@
   padding: 100px 0;
   text-align: center;
 }
+
+/* Thin out the track information */
+.featurette-heading2 {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+/* jPlayer */
+.jp-jplayer,.jp-audio {
+    width: 70%;
+    margin: 3rem auto .5rem auto;
+		}
+		.jp-title {
+	    font-size: 12px;
+	    text-align: center;
+	    color: #999;
+		}
+		.jp-title ul {
+	    padding: 0;
+	    margin: 0;
+	    list-style: none;
+		}
+		.jp-gui {
+	    position: relative;
+	    transition: background .4s ease-in-out;
+	    border-radius: 3px;
+	    overflow: hidden;
+	    margin-top: 10px;
+		}
+		.jp-controls {
+	    padding: 0;
+	    margin: 0;
+	    list-style: none;
+	    font-family: "FontAwesome";
+		}
+
+		.jp-controls li {
+	    display: grid;
+		}
+
+		.jp-controls a {
+	    color: #fff;
+		}
+		.jp-play,.jp-pause {
+	    width: 60px;
+	    height: 40px;
+	    display: grid-block;
+	    text-align: center;
+	    line-height: 43px;
+		}
+
+		.jp-controls .jp-play:hover,.jp-controls .jp-pause:hover {
+	    background-color: darken($highlight, 10%);
+		}
+
+		.jp-mute,.jp-unmute {
+	    position: absolute;
+	    right: 59px;
+	    top: -3px;
+	    width: 20px;
+	    height: 40px;
+	    display: grid-block;
+	    line-height: 46px;
+		}
+
+		.jp-mute {
+	    text-align: left;
+		}
+		.jp-time-holder {
+	    color: #FFF;
+	    font-size: 12px;
+	    line-height: 14px;
+	    position: absolute;
+	    right: 90px;
+	    top: 14px;
+		}
+
+		.jp-play-bar {
+	    height: 12px;
+	    background-color: #fff;
+	    border-radius: 20px 20px 20px 20px;
+		}
+
+		.jp-volume-bar {
+	    position: absolute;
+	    right: 10px;
+	    top: 17px;
+	    width: 45px;
+	    height: 8px;
+	    border-radius: 20px 20px 20px 20px;
+	    background-color: darken($highlight, 25%);
+	    overflow: hidden;
+		}
+
+		.jp-volume-bar-value {
+	    background-color: #fff;
+	    height: 8px;
+	    border-radius: 20px 20px 20px 20px;
+		}
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (min-width: 768px) {
+      /* Navbar positioning foo */
+      .featurette-heading2 {
+        font-size: 50px;
+      }
+
+    }
+
+
+    @media (min-width: 992px) {
+      .featurette-heading2 {
+
+      }
+    }

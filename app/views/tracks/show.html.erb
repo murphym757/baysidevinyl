@@ -5,40 +5,89 @@
            <%= image_tag @track.image.url(:medium) %>
 
           <p>
+            <h2 class="featurette-heading2">
             <strong>Artist:</strong>
+            <span class="text-muted">
             <%= @track.artist %>
+            </span></h2>
           </p>
 
           <p>
+            <h2 class="featurette-heading2">
             <strong>Album:</strong>
+            <span class="text-muted">
             <%= @track.album %>
+            </span></h2>
           </p>
 
           <p>
+            <h2 class="featurette-heading2">
             <strong>Song:</strong>
+            <span class="text-muted">
             <%= @track.song %>
+            </span></h2>
           </p>
 
           <p>
+            <h2 class="featurette-heading2">
             <strong>Genre:</strong>
+            <span class="text-muted">
             <%= @track.genre %>
+            </span></h2>
           </p>
 
           <p>
+            <h2 class="featurette-heading2">
             <strong>Year:</strong>
+            <span class="text-muted">
             <%= @track.year %>
+            </span></h2>
           </p>
 
           <p>
+            <h2 class="featurette-heading2">
             <strong>Post Creator:</strong>
+            <span class="text-muted">
             <%= @track.user.username %>
+            </span></h2>
           </p>
 
-          <audio controls>
-  <source src="http://www.w3schools.com/html/horse.ogg" type="audio/ogg" />
-  <source src="http://www.w3schools.com/html/horse.mp3" type="audio/mpeg" />
-  <a href="http://www.w3schools.com/html/horse.mp3">horse</a>
-</audio>
+
+          <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+      <div id="jp_container_1" class="jp-audio">
+        <div class="jp-type-single">
+          <div class="jp-gui jp-interface">
+            <ul class="jp-controls">
+              <li><a href="javascript:;" class="jp-play" tabindex="1">&#61515;</a></li>
+              <li><a href="javascript:;" class="jp-pause" tabindex="1">&#61516;</a></li>
+              <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">&#61480;</a></li>
+              <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">&#61478;</a></li>
+            </ul>
+
+            <div class="jp-progress">
+              <div class="jp-seek-bar">
+                <div class="jp-play-bar"></div>
+              </div>
+            </div>
+
+            <div class="jp-time-holder">
+              <div class="jp-current-time"></div>
+            </div>
+
+            <div class="jp-volume-bar">
+              <div class="jp-volume-bar-value"></div>
+            </div>
+
+            <div class="jp-no-solution">
+              <span>Update Required</span>
+              To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+            </div>
+          </div>
+        </div>
+      </div>
+
+		</div>
+</div>
 
           <%= link_to 'Edit', edit_track_path(@track) %> |
           <%= link_to 'Back', tracks_path %>
@@ -46,3 +95,19 @@
         </div>
     </div>
 </header>
+
+
+
+<script>
+$(document).ready(function(){
+  $("#jquery_jplayer_1").jPlayer({
+    ready: function () {
+      $(this).jPlayer("setMedia", {
+        mp3: "<%= @track.mp3.url %>",
+      });
+    },
+    swfPath: "/js",
+    supplied: "mp3"
+  });
+});
+</script>
