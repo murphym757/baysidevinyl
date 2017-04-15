@@ -208,7 +208,7 @@ DEPENDENCIES
   bootstrap_form
   byebug
   coffee-rails (~> 4.2)
-  devise
+  devise (~> 4.2)
   font-awesome-sass
   jbuilder (~> 2.5)
   jquery-rails
