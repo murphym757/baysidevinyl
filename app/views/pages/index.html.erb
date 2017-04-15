@@ -47,13 +47,12 @@
 
   </div>
   <div class="col-md-5 col-md-pull-7">
-     <a href="#" data-toggle="modal" data-target="#HOMFrontModal">
-     <img class="featurette-image img-responsive center-block"><%= image_tag("hit-or-miss.svg", alt: "square2-img", height: 500, width: 500) %></img>
+     <a href="tracks#index">
+     <img class="featurette-image img-responsive center-block"><%= image_tag("BVplay.svg", alt: "square2-img", height: 500, width: 500) %></img>
    </a>
    </div>
  </div>
 
-<script src="HOM.js"></script>
 
 
 
@@ -120,27 +119,36 @@
 </div><!-- /.container -->
 
 <!-- Modal -->
-<div class="modal fade" id="HOMFrontModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Hit-or-Miss</h4>
+        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
       <div class="modal-body">
-        <div class="form-group">
-    
-        </div>
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="form-control-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="form-control-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-custom btn-lg">Begin</button>
-       <button type="button" class="btn btn-custom btn-lg" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
       </div>
     </div>
   </div>
 </div>
-
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="app/assets/javascripts/bootstrap.js"></script>
