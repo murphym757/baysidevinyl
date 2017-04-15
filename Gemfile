@@ -14,6 +14,7 @@ gem 'variables'
 gem 'devise'
 gem 'bootstrap_form'
 gem 'paperclip', '~> 5.1'
+gem 'aws-sdk', '~> 2.0'
 
 
 
