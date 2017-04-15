@@ -16,7 +16,8 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
-/public/system/tracks/images
+
 
 # Ignore Byebug command history file.
 .byebug_history
+/public/system/tracks/images
