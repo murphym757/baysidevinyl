@@ -13,6 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets
-//= require jquery.jplayer.js
+//= require jquery.jplayer.min.js
 //= require turbolinks
 //= require_tree .
