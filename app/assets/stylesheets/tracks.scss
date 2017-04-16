@@ -6,11 +6,18 @@ $highlight: #B8DACC;
 $dark: #22292e;
 $light: #EDEFF5;
 
+.intro-index{
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 75px 0px;
+  text-align: center;
+}
+
 .intro-body{
   display: table;
   width: 100%;
   height: auto;
-  padding: 100px 0;
   text-align: center;
 }
 
