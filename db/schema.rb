@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170411225608) do
+ActiveRecord::Schema.define(version: 20170417041832) do
 
   create_table "pages", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -34,6 +34,10 @@ ActiveRecord::Schema.define(version: 20170411225608) do
     t.string   "mp3_content_type"
     t.integer  "mp3_file_size"
     t.datetime "mp3_updated_at"
+    t.string   "ogg_file_name"
+    t.string   "ogg_content_type"
+    t.integer  "ogg_file_size"
+    t.datetime "ogg_updated_at"
   end
 
   create_table "users", force: :cascade do |t|

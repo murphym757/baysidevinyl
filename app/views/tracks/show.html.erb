@@ -101,10 +101,11 @@
 	    ready: function () {
 	      $(this).jPlayer("setMedia", {
 	        mp3: "<%= @track.mp3.url %>",
+          ogg: "<%= @track.ogg.url %>",
 	      });
 	    },
 	    swfPath: "/js",
-	    supplied: "mp3"
+	    supplied: "mp3, ogg"
 	  });
 	});
 </script>
