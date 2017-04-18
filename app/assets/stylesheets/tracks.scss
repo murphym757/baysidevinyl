@@ -152,6 +152,12 @@ $light: #EDEFF5;
     }
 
     @media (max-width: 767px) and (orientation: landscape){
+      .trackinfo{
+         text-align: right;
+      }
+      .trackpic {
+        text-align: left;
+      }
           .featurette-heading2 {
             font-size: 20px;
             font-weight: 500;
@@ -161,10 +167,14 @@ $light: #EDEFF5;
     }
 
     @media (max-width: 767px) and (orientation: portrait){
+      .trackpic {
+
+      }
           .featurette-heading2 {
 
           }
-    }
+
+  }
 
 
     @media (min-width: 768px) {
