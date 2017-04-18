@@ -1,12 +1,14 @@
-<header class="intro">
-    <div class="intro-body">
+    <div class="intro-body2">
         <div class="container">
           <div class="row">
-            <div class="col-md-8 col-lg-4">
+            <div class="col-xs-5">
            <%= image_tag @track.image.url(:medium) %>
+           <%= button_to "Edit", edit_track_path(@track), method: :get, class: "btn btn-custom" %>
+           <%= button_to "Tracks", tracks_path, method: :get, class: "btn btn-custom" %>
+
          </div>
 
-
+         <div class="col-xs-5 ">
           <p>
             <h2 class="featurette-heading2">
             <strong>Artist:</strong>
@@ -83,17 +85,19 @@
 
       <div class="jp-no-solution">
         <span>Update Required</span>
-        To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+        Please refresh the page.
       </div>
     </div>
   </div>
 </div>
 
-          <%= link_to 'Edit', edit_track_path(@track) %> |
-          <%= link_to 'Back', tracks_path %>
-          </div>
 
-</header>
+        </div>
+      </div>
+          </div>
+        </div>
+
+
 
 <script>
 	$(document).ready(function(){
@@ -109,3 +113,22 @@
 	  });
 	});
 </script>
+
+
+<div class="modal fade" id="trackShowModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">(<%= @track.song %>)</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <%= render "tracks/form" %>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>

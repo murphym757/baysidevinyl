@@ -1,5 +1,5 @@
 <%= bootstrap_form_for @track, html: { multipart: true } do |f| %>
-<% if track.errors.any? %>
+<% if @track.errors.any? %>
     <div id="error_explanation">
       <h2 class= "page-title"><%= pluralize(track.errors.count, "error") %> prohibited this track from being saved:</h2>
 
@@ -13,14 +13,13 @@
 
 
   <header class="formpage2">
-      <div class="col-md-8 col-md-offset-2">
-          <img class="logo-heading-form2"><%= image_tag track.image.url(:medium) %></img>
-      </div>
+
+          <img class="logo-heading-form2"><%= image_tag @track.image.url(:medium) %></img>
+
         <div class="entirepanel2">
-          <div class="container .col-xs-12 .col-sm-6 .col-md-8">
-            <div class="row">
-              <div class="panel panel-default">
-                <div class="panel-heading">Track Information</div>
+
+
+
                   <div class="panel-body">
                     <div class="field">
                       <%= f.text_field :artist, autofocus: true, placeholder: "Enter Artist" %>
@@ -50,9 +49,6 @@
                       <%= f.file_field :mp3, autofocus: true  %>
                     </div>
 
-                    <div class="field">
-                      <%= f.file_field :ogg, autofocus: true  %>
-                    </div>
 
                     <div class="actions">
                       <%= f.submit %>
@@ -61,7 +57,7 @@
 
                 </div>
             </div>
-          </div>
-        </div>
+
+
       </div>
   </header>
