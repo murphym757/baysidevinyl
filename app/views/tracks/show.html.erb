@@ -1,11 +1,10 @@
     <div class="intro-body2">
         <div class="container">
-          <div class="row">
+          <div class="row featurette">
             <div class="col-xs-4">
               <div class="trackpic">
            <%= image_tag @track.image.url(:medium) %>
            <%= button_to "Edit", edit_track_path(@track), method: :get, class: "btn btn-custom" %>
-           <%= button_to "Tracks", tracks_path, method: :get, class: "btn btn-custom" %>
          </div>
          </div>
 

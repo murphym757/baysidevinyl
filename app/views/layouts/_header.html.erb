@@ -4,14 +4,12 @@
       <div class="navbar-header">
 
         <% if user_signed_in? %>
-        <div class="chip">
-        <a class="navbar-brand" href="#">
-             <li class="fa fa-home" href="/pages"></li><%= link_to "Bayside Vinyl", pages_path, class: "navbar-brand" %>
+        <a class="navbar-brand">
+             <%= link_to "Bayside Vinyl", pages_path, class: "navbar-brand" %>
         </a>
-      </div>
         <% else %>
-        <a class="navbar-brand" href="/pages">
-            <li class="fa fa-home" href="/pages"></li><%= link_to "Bayside Vinyl", pages_path, class: "navbar-brand" %>
+        <a class="navbar-brand">
+            </li><%= link_to "Bayside Vinyl", pages_path, class: "navbar-brand" %>
         </a>
         <% end %>
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bvoptions" aria-expanded="false">
@@ -27,9 +25,11 @@
         <ul class="nav navbar-nav navbar-right">
           <% if user_signed_in? %>
           <li><%= link_to current_user.username, edit_user_registration_path, class: "active" %></li>
+          <li><%= link_to "Tracks", tracks_path, class: "active" %></li>
           <% else %>
           <li><%= link_to "Sign Up", new_user_registration_path, class: "active" %></li>
           <li><%= link_to "Sign In", new_user_session_path, class: "active" %></li>
+          <li><%= link_to "Tracks", tracks_path, class: "active" %></li>
           <% end %>
         </ul>
       </div><!-- /.navbar-collapse -->
