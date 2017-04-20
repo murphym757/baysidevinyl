@@ -13,12 +13,15 @@
       <div class="jumbotron">
       <p class="lead">We are glad to have you back to Bayside Vinyl, <%= current_user.username %>. As always, we are looking to change your idea of vinyl record shopping. </p>
       <hr class="my-4">
+      <p class="lead">Please refresh the page once you have selected a track. This refreshes the page, as well as, the media player itself.</p>
       <%= button_to "New Track", new_track_path, method: :get, class: "btn btn-custom" %>
     </div>
     <% else %>
     <div class="jumbotron">
     <p class="lead">We are Bayside Vinyl and we are looking to change your idea of vinyl record shopping.</p>
     <hr class="my-4">
+    <h2 class="featurette-heading">Important Note:</h2>
+    <p class="lead">Please refresh the page once you have selected a track. This refreshes the page, as well as, the media player itself.</p>
     <li>
       <%= button_to "New Track", new_user_session_path, class: "btn btn-custom" %>
   </li>

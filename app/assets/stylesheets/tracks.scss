@@ -28,7 +28,6 @@ $light: #EDEFF5;
   width: 100%;
   height: auto;
   text-align: center;
-  padding-top: 70px;
   background: image-url("Baysidehome.jpg") no-repeat bottom center scroll;
   background-color: #B8DACC;
   -webkit-background-size: cover;
@@ -146,15 +145,14 @@ $light: #EDEFF5;
     -------------------------------------------------- */
     /* Small devices (phones) */
     @media (max-width: 767px) and (orientation: landscape){
-      .albumart{
-        min-width: 50px;
-        min-height: 50px;
-      }
       .showcontents {
         display: inline-block;
       }
       .trackpic {
 
+      }
+      .trackinfo {
+        text-align: right;
       }
 
           .featurette-heading2 {
@@ -163,6 +161,25 @@ $light: #EDEFF5;
             line-height: 1;
             letter-spacing: -1px;
           }
+          .intro-body2 {
+            padding-top: 65px;
+          }
+          .signInForm {
+            padding-top: 70px;
+          }
+          .userEditForm{
+            padding-top: 70px;
+          }
+          .signUpForm{
+            padding-top: 70px;
+          }
+          .passwordsEditForm{
+            padding-top: 70px;
+          }
+          .passwordsNewForm{
+            padding-top: 70px;
+          }
+
     }
 
 
@@ -176,13 +193,27 @@ $light: #EDEFF5;
       .entirepanel {
         padding-top: 100px;
       }
-      .entirepanel2 {
-        padding-top: 100px;
-      }
           .featurette-heading2 {
 
           }
-
+          .intro-body2 {
+            padding-top: 48px;
+          }
+          .signInForm {
+            padding-top: 70px;
+          }
+          .userEditForm {
+          padding-top: 70px;
+          }
+          .signUpForm{
+            padding-top: 70px;
+          }
+          .passwordsEditForm{
+            padding-top: 70px;
+          }
+          .passwordsNewForm{
+            padding-top: 70px;
+          }
   }
 /* ---------------------------------------------------- */
 

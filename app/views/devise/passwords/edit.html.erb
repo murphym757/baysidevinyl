@@ -3,42 +3,35 @@
   <%= f.hidden_field :reset_password_token %>
 
 
-<header class="formpage2">
-    <div class="col-md-8 col-md-offset-2">
-        <img class="logo-heading-form2"><%= image_tag("Bayside Logo.svg", alt: "logo-img", height: 720, width: 720) %></img>
-    </div>
-    <div class="entirepanel2">
-        <div class="container .col-xs-12 .col-sm-6 .col-md-8">
-            <div class="row">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Change your password</div>
-                    <div class="panel-body">
-                        <div class="field">
-                            <%= f.email_field :email, autofocus: true, placeholder: "Enter email" %>
-                        </div>
+<div class="container">
+      <header class="formpage">
+      <div class="row">
+        <div class="passwordsEditForm">
+          <div class="panel panel-default">
+              <div class="panel-heading">Change Your Passowrd</div>
+            </div>
+             <div class="panel-body">
+                                 <div class="field">
+                                     <%= f.email_field :email, autofocus: true, placeholder: "Enter email" %>
+                                 </div>
 
-                        <div class="field">
-                          <% if @minimum_password_length %>
-                            <em>(<%= @minimum_password_length %> characters minimum)</em><br />
-                          <% end %>
-                            <%= f.password_field :password, autocomplete: "off", placeholder: "Enter password" %>
-                        </div>
+                                 <div class="field">
+                                   <% if @minimum_password_length %>
+                                     <em>(<%= @minimum_password_length %> characters minimum)</em><br />
+                                   <% end %>
+                                     <%= f.password_field :password, autocomplete: "off", placeholder: "Enter password" %>
+                                 </div>
 
-                        <div class="field">
-                          <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "Confirm password" %>
-                        </div>
+                                 <div class="field">
+                                   <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "Confirm password" %>
+                                 </div>
 
-                        <div class="actions">
-                          <%= f.submit "Change my password" %>
-                        </div>
-                      <% end %>
-
-                        <br>
-                        <%= render "devise/shared/links" %>
-
-                    </div>
+                                 <div class="actions">
+                                   <%= f.submit "Change my password", class: "btn btn-custom" %>
+                                 </div>
+                                 <%= render "devise/shared/links" %>
                 </div>
             </div>
         </div>
+      </header>
       </div>
-    </header>
