@@ -32,6 +32,9 @@
 body {
   background-color: #B8DACC;
 }
+li {
+  list-style-type: none;
+}
 
 /* Bootstrap
 ------------------------- */
@@ -113,7 +116,7 @@ body {
   color: #688c7e;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #B8DACC;
   }
@@ -230,7 +233,6 @@ fieldset[disabled] .btn-custom.active {
     display: table;
     width: 100%;
     height: auto;
-    padding: 10px 0;
     text-align: center;
     color: black;
     background: image-url("") no-repeat bottom center scroll;
@@ -256,11 +258,11 @@ fieldset[disabled] .btn-custom.active {
 }
 
   .entirepanel {
-    padding-top: 350px;
+    padding-top: 75px;
   }
 
   .entirepanel2 {
-    padding-top: 750px;
+    padding-top: 75px;
   }
 
   .logo-heading-form {
@@ -289,29 +291,6 @@ fieldset[disabled] .btn-custom.active {
   .panel-body {
     background-color: #B8DACC;
   }
+/*-------------------------------------------------*/
 
-
- /* Small devices (tablets, 768px and up) */
-  @media (max-width:768px) {
-    .entirepanel {
-      padding-top: 100px;
-    }
-    .entirepanel2 {
-      padding-top: 100px;
-    }
-  }
-
-/* Medium devices (tablets, 992px and down) */
-  @media (max-width: 992px) {
-    .entirepanel {
-      padding-top: 100px;
-    }
-    .entirepanel2 {
-          padding-top: 100px;
-        }
-    .container {
-      width: 100%;
-      height: auto;
-      text-align: center;
-    }
-  }
+ 

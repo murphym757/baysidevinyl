@@ -78,23 +78,4 @@ a.linkvinyl:hover {color:#688c7e;}
    text-align: center;
 }
 
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-@media (min-width: 768px) {
-  /* Navbar positioning foo */
-  .featurette-heading {
-    font-size: 50px;
-  }
-  .logo-heading {
-      background-size: 290px 290px;
-    }
-
-}
-
-
-@media (min-width: 992px) {
-  .featurette-heading {
-    margin-top: 120px;
-  }
-}
+/*-------------------------------------------------- */

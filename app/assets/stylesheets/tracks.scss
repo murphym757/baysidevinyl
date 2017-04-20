@@ -144,40 +144,81 @@ $light: #EDEFF5;
 
     /* RESPONSIVE CSS
     -------------------------------------------------- */
-    @media (max-width: 480px) and (orientation: landscape){
-          .featurette-heading2 {
-            font-size: 30px;
-          }
-
-    }
-
+    /* Small devices (phones) */
     @media (max-width: 767px) and (orientation: landscape){
-      .trackinfo{
-         text-align: right;
+      .albumart{
+        min-width: 50px;
+        min-height: 50px;
+      }
+      .showcontents {
+        display: inline-block;
       }
       .trackpic {
-        
+
       }
+
           .featurette-heading2 {
             font-size: 20px;
-            font-weight: 500;
+            font-weight: 400;
             line-height: 1;
             letter-spacing: -1px;
           }
     }
 
+
     @media (max-width: 767px) and (orientation: portrait){
       .trackpic {
 
+      }
+      .showcontents {
+        display: inline-block;
+      }
+      .entirepanel {
+        padding-top: 100px;
+      }
+      .entirepanel2 {
+        padding-top: 100px;
       }
           .featurette-heading2 {
 
           }
 
   }
+/* ---------------------------------------------------- */
+
+/* Medium devices (tablets, 768px and up/1439px and down) */
+@media (min-width: 768px) and (max-width: 1439px)
+       and (orientation: portrait){
+      /* Navbar positioning foo */
+      .featurette-heading2 {
+        font-size: 50px;
+      }
+      .entirepanel {
+        padding-top: 100px;
+      }
+      .entirepanel2 {
+            padding-top: 100px;
+          }
+      .container {
+        width: 100%;
+        height: auto;
+        text-align: center;
+      }
+      .panel-body {
+        background-color: #B8DACC;
+        padding-top: 500px;
+      }
+      .featurette-heading {
+        font-size: 50px;
+      }
+      .logo-heading {
+          background-size: 290px 290px;
+        }
+    }
 
 
-    @media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1439px)
+       and (orientation: landscape){
       /* Navbar positioning foo */
       .featurette-heading2 {
         font-size: 50px;
@@ -185,11 +226,16 @@ $light: #EDEFF5;
 
 
     }
+/* ---------------------------------------------------- */
 
 
-    @media (min-width: 992px) {
+/* Large devices (Computers, 1440px and up) */
+@media (min-width: 1440px) and (orientation: landscape){
+      /* Navbar positioning foo */
       .featurette-heading2 {
-
+        font-size: 50px;
       }
 
+
     }
+/* ---------------------------------------------------- */

@@ -1,14 +1,18 @@
     <div class="intro-body2">
         <div class="container">
           <div class="row featurette">
-            <div class="col-xs-4">
-              <div class="trackpic">
-           <%= image_tag @track.image.url(:medium) %>
-           <%= button_to "Edit", edit_track_path(@track), method: :get, class: "btn btn-custom" %>
-         </div>
-         </div>
+              <li class="showcontents">
+                <div class="trackpic">
 
-         <div class="col-xs-8">
+           <%= image_tag @track.image.url(:medium), class: :albumart, size: "200x200"%>
+           <% if user_signed_in? %>
+           <%= button_to "Edit", edit_track_path(@track), method: :get, class: "btn btn-custom" %>
+           <% else %>
+           <% end %>
+         </div></li>
+
+
+         <li class="showcontents">
            <div class="trackinfo">
           <p>
             <h2 class="featurette-heading2">
@@ -58,7 +62,7 @@
             </span></h2>
           </p>
           </div>
-          </div>
+        </li>
           </div>
 
 

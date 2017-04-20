@@ -12,14 +12,10 @@
   <% end %>
 
 
-  <header class="formpage2">
-
-          <img class="logo-heading-form2"><%= image_tag @track.image.url(:medium) %></img>
-
+  <div class="container">
+    <div class="row">
         <div class="entirepanel2">
-
-
-
+          <header class="formpage">
                   <div class="panel-body">
                     <div class="field">
                       <%= f.text_field :artist, autofocus: true, placeholder: "Enter Artist" %>
@@ -49,15 +45,12 @@
                       <%= f.file_field :mp3, autofocus: true  %>
                     </div>
 
-
                     <div class="actions">
-                      <%= f.submit %>
+                      <%= f.submit "Update Track", class: "btn btn-custom"%>
                     </div>
                   <% end %>
-
                 </div>
+              </header>
             </div>
-
-
       </div>
-  </header>
+</div>

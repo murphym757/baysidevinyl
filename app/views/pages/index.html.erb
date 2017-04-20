@@ -3,7 +3,7 @@
      <div class="intro-body">
          <div class="container">
              <div class="row">
-                 <div class="col-md-8 col-md-offset-2">
+                 <div class="col-xs-8 col-xs-offset-2">
                      <img class="logo-heading"><%= image_tag("Bayside Logo.svg", alt: "logo-img", height: 720, width: 720) %></img>
                  </div>
                  <% if user_signed_in? %>
@@ -18,7 +18,7 @@
                <h1 class="Hi">Welcome!</h1>
                <p class="lead">We are Bayside Vinyl and we are looking to change your idea of vinyl record shopping.</p>
                <hr class="my-4">
-               <p class="greetmessage2">You can sign in/sign up with the button below. You can also go directly to app with the Hit-or-Miss button and you do not need to sign up to use it. However, you do need to sign in/sign up to store your favorite vinyl to your profile.</p>
+               <p class="greetmessage2">You can sign in and/or sign up at the top of this page. You can also go directly to the BV Collection (media player) with the play button down below (or the tracks link at the top of this page). There are no requirements to play the tracks. However, you do need to sign in/sign up to add them to the player.</p>
              </div>
                <% end %>
              </div>
@@ -42,7 +42,7 @@
 <!-- Hit or Miss app -->
 <div class="row featurette">
   <div class="col-md-7 col-md-push-5">
-    <h2 class="featurette-heading">Looking for a particular record, but not sure which one to chose? <span class="text-muted">Well, simply press the Hit-or-Miss logo to receive help with that.</span></h2>
+    <h2 class="featurette-heading">Looking for a particular record, but not sure which one to chose? <span class="text-muted">Well, perhaps you could gain some inspiration by pressing this play.</span></h2>
     <p class="homeparagraph"></p>
 
   </div>
@@ -98,7 +98,9 @@
     <div class="col-md-7">
       <h2 class="featurette-heading">Are there anymore plans for Bayside Vinyl? <span class="text-muted">Yes.</span></h2>
       <p class="homeparagraph">Well, this page actually serves as the central hub for anything connected to the Bayside Vinyl brand.
-                               As of right now, the hit-or-miss vinyl selector app is available to use. However, there are plans to expand the brand in a plethora of ways.</p>
+                               As of right now, the BV Music Player is available to use. The goal is to create possibly a blog, as well as, a vinyl selection assistant app.
+                               The vinyl selection app is called Hit-or-Miss. With the combination of the Discogs api and Ruby on Rails, Hit-or-Miss will revolutionize the digital vinyl record shopping experience.
+                               So to answer the question, there absolutely plans to expand the brand. </p>
     </div>
     <div class="col-md-5">
       <img class="featurette-image img-responsive center-block"><%= image_tag("Content.jpg", alt: "square3-img", height: 500, width: 500) %></img>
