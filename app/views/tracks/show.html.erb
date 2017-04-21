@@ -1,18 +1,19 @@
-    <div class="intro-body2">
-        <div class="container">
-          <div class="row">
-              <li class="showcontents">
-                <div class="col-xs-12 col-lg-3">
-           <%= image_tag @track.image.url(:medium), class: :albumart, size: "250x250"%>
-           <% if user_signed_in? %>
-           <%= button_to "Edit", edit_track_path(@track), method: :get, class: "btn btn-custom" %>
-           <% else %>
-           <% end %>
-         </div></li>
+<div class="intro-body2">
+    <div class="container">
+        <div class="row">
+        <li class="showcontents">
+            <div class="col-xs-12 col-md-12 col-lg-12">
+                <%= image_tag @track.image.url(:medium), class: :albumart, size: "250x250"%>
+                <% if user_signed_in? %>
+                <%= button_to "Edit", edit_track_path(@track), method: :get, class: "btn btn-custom" %>
+            <% else %>
+                <% end %>
+            </div>
+        </li>
 
 
-         <li class="showcontents">
-           <div class="col-xs-12 col-lg-3">
+         <li class="showcontents2">
+           <div class="col-xs-12 col-md-12 col-lg-12">
            <div class="trackinfo">
           <p>
             <h2 class="featurette-heading2">

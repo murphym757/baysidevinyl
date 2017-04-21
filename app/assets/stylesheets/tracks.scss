@@ -147,9 +147,13 @@ $light: #EDEFF5;
     @media (max-width: 767px) and (orientation: landscape){
       .showcontents {
         display: inline-block;
+        padding-top: 50px;
       }
-      .trackpic {
-
+      .showcontents2 {
+        display: inline-block;
+      }
+      .homepagepic {
+        text-align: center;
       }
       .trackinfo {
         text-align: right;
@@ -162,7 +166,7 @@ $light: #EDEFF5;
             letter-spacing: -1px;
           }
           .intro-body2 {
-            padding-top: 65px;
+
           }
           .signInForm {
             padding-top: 70px;
@@ -189,6 +193,10 @@ $light: #EDEFF5;
       }
       .showcontents {
         display: inline-block;
+        padding-top: 48px;
+      }
+      .showcontents2 {
+        display: inline-block;
       }
       .entirepanel {
         padding-top: 100px;
@@ -197,7 +205,7 @@ $light: #EDEFF5;
 
           }
           .intro-body2 {
-            padding-top: 48px;
+
           }
           .signInForm {
             padding-top: 70px;
@@ -206,7 +214,7 @@ $light: #EDEFF5;
           padding-top: 70px;
           }
           .signUpForm{
-            padding-top: 90px;
+            padding-top: 70px;
           }
           .passwordsEditForm{
             padding-top: 70px;
@@ -218,12 +226,17 @@ $light: #EDEFF5;
 /* ---------------------------------------------------- */
 
 /* Medium devices (tablets, 768px and up/1439px and down) */
-@media (min-width: 768px) and (max-width: 1439px)
+@media (min-width: 768px) and (max-width: 1024px)
        and (orientation: portrait){
       /* Navbar positioning foo */
       .featurette-heading2 {
         font-size: 50px;
       }
+      .showcontents {
+        display: inline-block;
+        padding-top: 125px;
+      }
+
       .entirepanel {
         padding-top: 100px;
       }
@@ -240,33 +253,138 @@ $light: #EDEFF5;
         padding-top: 500px;
       }
       .featurette-heading {
-        font-size: 50px;
+
       }
       .logo-heading {
           background-size: 290px 290px;
         }
+        .signInForm {
+          padding-top: 300px;
+        }
+        .userEditForm{
+          padding-top: 300px;
+        }
+        .signUpForm{
+          padding-top: 300px;
+        }
+        .passwordsEditForm{
+          padding-top: 300px;
+        }
+        .passwordsNewForm{
+          padding-top: 300px;
+        }
     }
 
 
-@media (min-width: 768px) and (max-width: 1439px)
+@media (min-width: 768px) and (max-width: 1024px)
        and (orientation: landscape){
       /* Navbar positioning foo */
+      .showcontents {
+        display: inline-block;
+        padding-top: 250px;
+      }
+      .showcontents2 {
+        display: inline-block;
+      }
       .featurette-heading2 {
-        font-size: 50px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: -1px;
+      }
+      .signInForm {
+        padding-top: 300px;
+      }
+      .userEditForm{
+        padding-top: 300px;
+      }
+      .signUpForm{
+        padding-top: 300px;
+      }
+      .passwordsEditForm{
+        padding-top: 300px;
+      }
+      .passwordsNewForm{
+        padding-top: 300px;
       }
 
-
     }
+/* ---------------------------------------------------- */
+/* Large devices (Laptops (and large resolution tablets), 1025px to 1439px) */
+    @media (min-width: 1025px) and (max-width: 1439px)
+           and (orientation: landscape){
+          /* Navbar positioning foo */
+          .featurette-heading2 {
+            font-size: 50px;
+          }
+          .showcontents {
+            display: inline-block;
+            padding-top: 200px;
+          }
+          .signInForm {
+            padding-top: 250px;
+          }
+          .userEditForm{
+            padding-top: 250px;
+          }
+          .signUpForm{
+            padding-top: 250px;
+          }
+          .passwordsEditForm{
+            padding-top: 250px;
+          }
+          .passwordsNewForm{
+            padding-top: 250px;
+          }
+
+        }
 /* ---------------------------------------------------- */
 
 
 /* Large devices (Computers, 1440px and up) */
 @media (min-width: 1440px) and (orientation: landscape){
-      /* Navbar positioning foo */
-      .featurette-heading2 {
-        font-size: 50px;
-      }
+.featurette-heading{
+  font-size: 50px;
+}
+.homeparagraph{
+  padding-top: 30px;
+}
+.showcontents {
+  display: inline-block;
 
+  height: 300px;
+  width: 300px;
 
+}
+.showcontents2 {
+  display: inline-block;
+padding-top: 200px;
+}
+.trackpic {
+
+}
+.trackinfo {
+  text-align: right;
+}
+.signInForm {
+  padding-top: 300px;
+}
+.userEditForm{
+  padding-top: 300px;
+}
+.signUpForm{
+  padding-top: 300px;
+}
+.passwordsEditForm{
+  padding-top: 300px;
+}
+.passwordsNewForm{
+  padding-top: 300px;
+}
+    .featurette-heading2 {
+      font-size: 50px;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
     }
 /* ---------------------------------------------------- */
