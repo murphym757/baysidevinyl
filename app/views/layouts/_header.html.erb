@@ -1,40 +1,40 @@
 <!-- Navigation -->
 <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-      <div class="navbar-header">
+    <div class="container-fluid">
+        <div class="navbar-header">
 
-        <% if user_signed_in? %>
-        <a class="navbar-brand">
-             <%= link_to "Bayside Vinyl", pages_path, class: "navbar-brand" %>
-        </a>
+            <% if user_signed_in? %>
+            <a class="navbar-brand">
+                <%= link_to "Bayside Vinyl", pages_path, class: "navbar-brand" %>
+            </a>
         <% else %>
-        <a class="navbar-brand">
-            </li><%= link_to "Bayside Vinyl", pages_path, class: "navbar-brand" %>
+            <a class="navbar-brand"></li><%= link_to "Bayside Vinyl", pages_path, class: "navbar-brand" %>
         </a>
         <% end %>
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bvoptions" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
         </button>
-      </div>
+    </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bvoptions">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bvoptions">
         <ul class="nav navbar-nav navbar-right">
-          <% if user_signed_in? %>
-          <li><%= link_to current_user.username, edit_user_registration_path, class: "active" %></li>
-          <li><%= link_to "Tracks", tracks_path, class: "active" %></li>
-          <% else %>
-          <li><%= link_to "Sign Up", new_user_registration_path, class: "active" %></li>
-          <li><%= link_to "Sign In", new_user_session_path, class: "active" %></li>
-          <li><%= link_to "BV Collection", tracks_path, class: "active" %></li>
-          <% end %>
+            <% if user_signed_in? %>
+            <li><%= link_to current_user.username, edit_user_registration_path, class: "active" %></li>
+            <li><%= link_to "Tracks", tracks_path, class: "active" %></li>
+        <% else %>
+            <li><%= link_to "Sign Up", new_user_registration_path, class: "active" %></li>
+            <li><%= link_to "Sign In", new_user_session_path, class: "active" %></li>
+            <li><%= link_to "BV Collection", tracks_path, class: "active" %></li>
+            <% end %>
         </ul>
-      </div><!-- /.navbar-collapse -->
-      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.navbar-collapse -->
+    <!-- /.navbar-collapse -->
 
-  </div>
-  <!-- /.container -->
+</div>
+<!-- /.container -->
 </nav>

@@ -11,130 +11,138 @@
             </div>
         </li>
 
+        <li class="showcontents2">
+            <div class="col-xs-12 col-md-12 col-lg-12">
+                <div class="trackinfo">
+                    <p>
+                        <h2 class="featurette-heading2">
+                            <strong>Artist:</strong>
+                            <span class="text-muted">
+                                <%= @track.artist %>
+                            </span>
+                        </h2>
+                    </p>
 
-         <li class="showcontents2">
-           <div class="col-xs-12 col-md-12 col-lg-12">
-           <div class="trackinfo">
-          <p>
-            <h2 class="featurette-heading2">
-            <strong>Artist:</strong>
-            <span class="text-muted">
-            <%= @track.artist %>
-            </span></h2>
-          </p>
+                    <p>
+                        <h2 class="featurette-heading2">
+                            <strong>Album:</strong>
+                            <span class="text-muted">
+                                <%= @track.album %>
+                            </span>
+                        </h2>
+                    </p>
 
-          <p>
-            <h2 class="featurette-heading2">
-            <strong>Album:</strong>
-            <span class="text-muted">
-            <%= @track.album %>
-            </span></h2>
-          </p>
+                    <p>
+                        <h2 class="featurette-heading2">
+                            <strong>Song:</strong>
+                            <span class="text-muted">
+                                <%= @track.song %>
+                            </span>
+                        </h2>
+                    </p>
 
-          <p>
-            <h2 class="featurette-heading2">
-            <strong>Song:</strong>
-            <span class="text-muted">
-            <%= @track.song %>
-            </span></h2>
-          </p>
+                    <p>
+                        <h2 class="featurette-heading2">
+                            <strong>Genre:</strong>
+                            <span class="text-muted">
+                                <%= @track.genre %>
+                            </span>
+                        </h2>
+                    </p>
 
-          <p>
-            <h2 class="featurette-heading2">
-            <strong>Genre:</strong>
-            <span class="text-muted">
-            <%= @track.genre %>
-            </span></h2>
-          </p>
+                    <p>
+                        <h2 class="featurette-heading2">
+                            <strong>Year:</strong>
+                            <span class="text-muted">
+                                <%= @track.year %>
+                            </span>
+                        </h2>
+                    </p>
 
-          <p>
-            <h2 class="featurette-heading2">
-            <strong>Year:</strong>
-            <span class="text-muted">
-            <%= @track.year %>
-            </span></h2>
-          </p>
-
-          <p>
-            <h2 class="featurette-heading2">
-            <strong>Post Creator:</strong>
-            <span class="text-muted">
-            <%= @track.user.username %>
-            </span></h2>
-          </p>
-          </div>
-        </div>
+                    <p>
+                        <h2 class="featurette-heading2">
+                            <strong>Post Creator:</strong>
+                            <span class="text-muted">
+                                <%= @track.user.username %>
+                            </span>
+                        </h2>
+                    </p>
+                </div>
+            </div>
         </li>
-          </div>
-
+    </div>
 
     <div id="jquery_jplayer_1" class="jp-jplayer"></div>
     <div id="jp_container_1" class="jp-audio">
-      <div class="jp-type-single">
-        <div class="jp-gui jp-interface">
-          <ul class="jp-controls">
-            <li><a href="javascript:;" class="jp-play" tabindex="1">&#61515;</a></li>
-            <li><a href="javascript:;" class="jp-pause" tabindex="1">&#61516;</a></li>
-            <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">&#61480;</a></li>
-            <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">&#61478;</a></li>
-          </ul>
+        <div class="jp-type-single">
+            <div class="jp-gui jp-interface">
+                <ul class="jp-controls">
+                    <li>
+                        <a href="javascript:;" class="jp-play" tabindex="1">&#61515;</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="jp-pause" tabindex="1">&#61516;</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="jp-mute" tabindex="1" title="mute">&#61480;</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">&#61478;</a>
+                    </li>
+                </ul>
 
-          <div class="jp-progress">
-            <div class="jp-seek-bar">
-              <div class="jp-play-bar"></div>
+                <div class="jp-progress">
+                    <div class="jp-seek-bar">
+                        <div class="jp-play-bar"></div>
+                    </div>
+                </div>
+
+                <div class="jp-time-holder">
+                    <div class="jp-current-time"></div>
+                </div>
+
+                <div class="jp-volume-bar">
+                    <div class="jp-volume-bar-value"></div>
+                </div>
+
+                <div class="jp-no-solution">
+                    <span>Update Required</span>
+                    Please refresh the page.
+                </div>
             </div>
-          </div>
-
-          <div class="jp-time-holder">
-            <div class="jp-current-time"></div>
-          </div>
-
-          <div class="jp-volume-bar">
-            <div class="jp-volume-bar-value"></div>
-          </div>
-
-          <div class="jp-no-solution">
-            <span>Update Required</span>
-            Please refresh the page.
-          </div>
         </div>
-      </div>
     </div>
-  </div>
+</div>
 </div>
 
-
-
 <script>
-	$(document).ready(function(){
-	  $("#jquery_jplayer_1").jPlayer({
-	    ready: function () {
-	      $(this).jPlayer("setMedia", {
-	        mp3: "<%= @track.mp3.url %>",
-          ogg: "<%= @track.ogg.url %>",
-	      });
-	    },
-	    swfPath: "/js",
-	    supplied: "mp3, ogg"
-	  });
-	});
+$(document).ready(function () {
+    $("#jquery_jplayer_1").jPlayer({
+        ready: function () {
+            $(this).jPlayer("setMedia", {
+                mp3: "<%= @track.mp3.url %>",
+                ogg: "<%= @track.ogg.url %>"
+            });
+        },
+        swfPath: "/js",
+        supplied: "mp3, ogg"
+    });
+});
 </script>
 
-
 <div class="modal fade" id="trackShowModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+<div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">(<%= @track.song %>)</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      <%= render "tracks/form" %>
-      </div>
-      <div class="modal-footer">
-      </div>
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">(<%= @track.song %>)</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <%= render "tracks/form" %>
+        </div>
+        <div class="modal-footer"></div>
     </div>
-  </div>
+</div>
 </div>

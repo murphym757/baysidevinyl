@@ -1,82 +1,79 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
 /* Home Page */
-
 img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .intro {
-     display: table;
-     width: 100%;
-     height: auto;
-     padding: 100px 0;
-     text-align: center;
-		 background: image-url("Baysidehome.jpg") no-repeat bottom center scroll;
-		 background-color: #B8DACC;
-		 -webkit-background-size: cover;
-		 -moz-background-size: cover;
-		 background-size: cover;
-		 -o-background-size: cover;
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    background: image-url("Baysidehome.jpg") no-repeat bottom center scroll;
+    background-color: #B8DACC;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
 .jumbotron {
-    background-color:transparent !important;
+    background-color: transparent !important;
 }
-
 /* Font for "Welcome!" */
 .Hi {
-  font-family: 'CaviarDreams',sans-serif;
-  color: black;
+    font-family: 'CaviarDreams',sans-serif;
+    color: black;
 }
-
 
 .greetmessage2 {
-  font-size: 15px;
+    font-size: 15px;
 }
 
-.HOMcontent{
-  text-align: center;
-  font-family: 'CaviarDreams',sans-serif;
+.HOMcontent {
+    text-align: center;
+    font-family: 'CaviarDreams',sans-serif;
 }
-
 /* Featurettes
 ------------------------- */
-
 .featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    margin: 80px 0;
+    /* Space out the Bootstrap <hr> more */
 }
-
 /* Thin out the marketing headings */
 .featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
 }
-
 /* Span class */
 .text-muted {
-  color: #776D60;
+    color: #776D60;
 }
-
 /* Paragraph styling for each section */
 .homeparagraph {
-  color: #fff;
-  font-size: 16px;
-  padding-top: 12px;
+    color: #fff;
+    font-size: 16px;
+    padding-top: 12px;
+}
+/* links in paragraphs */
+a.linkvinyl:link {
+    color: #79745e;
 }
 
-/* links in paragraphs */
-a.linkvinyl:link {color:#79745e;}
-a.linkvinyl:visited {color:#79745e;}
-a.linkvinyl:hover {color:#688c7e;}
+a.linkvinyl:visited {
+    color: #79745e;
+}
 
+a.linkvinyl:hover {
+    color: #688c7e;
+}
 /* Footer */
 .footer {
-   text-align: center;
+    text-align: center;
 }
-
 /*-------------------------------------------------- */

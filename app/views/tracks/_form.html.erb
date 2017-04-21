@@ -1,56 +1,56 @@
 <%= bootstrap_form_for @track, html: { multipart: true } do |f| %>
 <% if @track.errors.any? %>
-    <div id="error_explanation">
-      <h2 class= "page-title"><%= pluralize(track.errors.count, "error") %> prohibited this track from being saved:</h2>
+<div id="error_explanation">
+    <h2 class="page-title"><%= pluralize(track.errors.count, "error") %>
+        prohibited this track from being saved:</h2>
 
-      <ul>
-      <% track.errors.full_messages.each do |message| %>
+    <ul>
+        <% track.errors.full_messages.each do |message| %>
         <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+        <% end %>
+    </ul>
+</div>
+<% end %>
 
-
-  <div class="container">
+<div class="container">
     <div class="row">
         <div class="entirepanel2">
-          <header class="formpage">
-                  <div class="panel-body">
+            <header class="formpage">
+                <div class="panel-body">
                     <div class="field">
-                      <%= f.text_field :artist, autofocus: true, placeholder: "Enter Artist" %>
+                        <%= f.text_field :artist, autofocus: true, placeholder: "Enter Artist" %>
                     </div>
 
                     <div class="field">
-                      <%= f.text_field :album, autofocus: true, placeholder: "Enter Album"  %>
+                        <%= f.text_field :album, autofocus: true, placeholder: "Enter Album"  %>
                     </div>
 
                     <div class="field">
-                      <%= f.text_field :song, autofocus: true, placeholder: "Enter Song"  %>
+                        <%= f.text_field :song, autofocus: true, placeholder: "Enter Song"  %>
                     </div>
 
                     <div class="field">
-                      <%= f.text_field :genre, autofocus: true, placeholder: "Enter Genre"  %>
+                        <%= f.text_field :genre, autofocus: true, placeholder: "Enter Genre"  %>
                     </div>
 
                     <div class="field">
-                      <%= f.text_field :year, autofocus: true, placeholder: "Enter Year"  %>
+                        <%= f.text_field :year, autofocus: true, placeholder: "Enter Year"  %>
                     </div>
 
                     <div class="field">
-                      <%= f.file_field :image, autofocus: true  %>
+                        <%= f.file_field :image, autofocus: true  %>
                     </div>
 
                     <div class="field">
-                      <%= f.file_field :mp3, autofocus: true  %>
+                        <%= f.file_field :mp3, autofocus: true  %>
                     </div>
 
                     <div class="actions">
-                      <%= f.submit "Update Track", class: "btn btn-custom"%>
+                        <%= f.submit "Update Track", class: "btn btn-custom"%>
                     </div>
-                  <% end %>
+                    <% end %>
                 </div>
-              </header>
-            </div>
-      </div>
+            </header>
+        </div>
+    </div>
 </div>
