@@ -7,7 +7,4 @@ class Track < ApplicationRecord
 
     has_attached_file :mp3
     validates_attachment :mp3, content_type: { content_type: ["audio/mpeg", "audio/mp3"] }, file_name: { matches: [/mp3\z/] }
-
-    has_attached_file :ogg
-    validates_attachment :ogg, content_type: { content_type: ["audio/ogg"] }, file_name: { matches: [/ogg\z/] }
 end
