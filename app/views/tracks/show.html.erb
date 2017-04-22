@@ -120,8 +120,7 @@ $(document).ready(function () {
     $("#jquery_jplayer_1").jPlayer({
         ready: function () {
             $(this).jPlayer("setMedia", {
-                mp3: "<%= @track.mp3.url %>",
-                ogg: "<%= @track.ogg.url %>"
+                mp3: "<%= @track.mp3.url %>"
             });
         },
         swfPath: "/js",
