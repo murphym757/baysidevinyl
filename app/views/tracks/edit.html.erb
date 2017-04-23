@@ -1,14 +1,16 @@
 <div class="container">
-    <div class="row">
-        <div class="entirepanel2">
-            <header class="formpage">
+    <header class="formpage">
+        <div class="row">
+          <div class="panel-body">
                 <img class="logo-heading-form2">
                     <%= image_tag @track.image.url(:medium) %>
                 </img>
             </header>
-            <%= render 'form', track: @track %>
             <div class="panel-body">
+            <%= render 'form', track: @track %>
                 <%= button_to "Delete Track", track_path(@track), data: { confirm: "Are you sure that you to delete this track?" }, method: :delete, class: "btn btn-custom" %>
             </div>
         </div>
     </div>
+  </header>
+</div>
