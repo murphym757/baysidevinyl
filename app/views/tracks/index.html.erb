@@ -1,42 +1,56 @@
 <div class="intro-index">
     <div class="container">
-        <%= image_tag("BV Collection.svg", alt: "square2-img", height: 500, width: 500) %>
-        <div class="row">
-            <% @tracks.each do |track| %>
-            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-                <div class="thumbnail">
-                    <%= link_to (image_tag track.image.url(:medium), class: 'image'), track %>
-                </div>
-            </div>
-            <% end %>
-        </div>
-        <% if user_signed_in? %>
-        <div class="jumbotron">
-            <p class="lead">We are glad to have you back to Bayside Vinyl,
-                <%= current_user.username %>. As always, we are looking to change your idea of vinyl record shopping.
-            </p>
-            <hr class="my-4">
-            <h2 class="featurette-heading">Helpful Tips:</h2>
-            <p class="helpfultips">
-              <ol>
-              <li>Please refresh the page once you have selected a track. This refreshes the page, as well as, the media player itself.</li>
-              <br>
-              <li>Some MP3s will not upload based on their format. I personally recommend the file converter, <a class="linkvinyl" href="https://macroplant.com/adapter/">Adapter</a>. It's free and easy to use.</li>
-              <br>
-              <li>If the play button isn't visible initially (via mobile), simply scroll down the page.</li>
-            </ol>
-            </p>
-            <%= button_to "New Track", new_track_path, method: :get, class: "btn btn-custom" %>
-        </div>
-    <% else %>
-        <div class="jumbotron">
-            <h2 class="featurette-heading">Helpful Tips:</h2>
-            <ul class="helpfultips">Please refresh the page once you have selected a track. This refreshes the page, as well as, the media player itself. If viewing on phones, please be sure to scroll down the page to see the media player.</p>
-            <hr class="my-4">
-        <li>
-            <%= button_to "New Track", new_user_session_path, class: "btn btn-custom" %>
-        </li>
+              <%= image_tag("BV Collection.svg", alt: "square2-img", height: 500, width: 500) %>
+              <div class="row">
+                  <% @tracks.each do |track| %>
+                  <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                      <div class="thumbnail">
+                          <%= link_to (image_tag track.image.url(:medium), class: 'image'), track %>
+                      </div>
+                  </div>
+                  <% end %>
+              </div>
+              <% if user_signed_in? %>
+              <div class="jumbotron">
+                  <p class="lead">We are glad to have you back to Bayside Vinyl,
+                      <%= current_user.username %>. As always, we are looking to change your idea of vinyl record shopping.
+                  </p>
+                  <hr class="my-4">
+                  <h2 class="featurette-heading">Helpful Tips:</h2>
+                  <p class="helpfultips">
+                      <ol>
+                          <li>Please refresh the page once you have selected a track. This refreshes the page, as well as, the media player itself.</li>
+                          <br>
+                          <li>Some MP3s will not upload based on their format. I personally recommend the file converter,
+                              <a class="linkvinyl" href="https://macroplant.com/adapter/">Adapter</a>. It's free and easy to use.</li>
+                          <br>
+                          <li>If the play button isn't visible initially (via mobile), simply scroll down the page.</li>
+                      </ol>
+                  </p>
+                  <hr class="my-4">
+              <li>
+                  <%= button_to "New Track", new_track_path, method: :get, class: "btn btn-custom" %>
+              </li>
+          </div>
+      <% else %>
+          <div class="jumbotron">
+              <hr class="my-4">
+              <h2 class="featurette-heading">Helpful Tips:</h2>
+              <p class="helpfultips">
+                  <ol>
+                      <li>Please refresh the page once you have selected a track. This refreshes the page, as well as, the media player itself.</li>
+                      <br>
+                      <li>Some MP3s will not upload based on their format. I personally recommend the file converter,
+                          <a class="linkvinyl" href="https://macroplant.com/adapter/">Adapter</a>. It's free and easy to use.</li>
+                      <br>
+                      <li>If the play button isn't visible initially (via mobile), simply scroll down the page.</li>
+                  </ol>
+              </p>
+              <hr class="my-4">
+          <li>
+              <%= button_to "New Track", new_user_session_path, class: "btn btn-custom" %>
+          </li>
+      </div>
     </div>
-</div>
-<% end %>
+  <% end %>
 </div>
