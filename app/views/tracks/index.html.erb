@@ -16,13 +16,22 @@
                 <%= current_user.username %>. As always, we are looking to change your idea of vinyl record shopping.
             </p>
             <hr class="my-4">
-            <p class="lead">Please refresh the page once you have selected a track. This refreshes the page, as well as, the media player itself.</p>
+            <h2 class="featurette-heading">Helpful Tips:</h2>
+            <p class="helpfultips">
+              <ol>
+              <li>Please refresh the page once you have selected a track. This refreshes the page, as well as, the media player itself.</li>
+              <br>
+              <li>Some MP3s will not upload based on their format. I personally recommend the file converter, <a class="linkvinyl" href="https://macroplant.com/adapter/">Adapter</a>. It's free and easy to use.</li>
+              <br>
+              <li>If the play button isn't visible initially (via mobile), simply scroll down the page.</li>
+            </ol>
+            </p>
             <%= button_to "New Track", new_track_path, method: :get, class: "btn btn-custom" %>
         </div>
     <% else %>
         <div class="jumbotron">
-            <h2 class="featurette-heading">Important Note:</h2>
-            <p class="lead">Please refresh the page once you have selected a track. This refreshes the page, as well as, the media player itself. If viewing on phones, please be sure to scroll down the page to see the media player.</p>
+            <h2 class="featurette-heading">Helpful Tips:</h2>
+            <ul class="helpfultips">Please refresh the page once you have selected a track. This refreshes the page, as well as, the media player itself. If viewing on phones, please be sure to scroll down the page to see the media player.</p>
             <hr class="my-4">
         <li>
             <%= button_to "New Track", new_user_session_path, class: "btn btn-custom" %>
