@@ -296,7 +296,15 @@ fieldset[disabled] .btn-custom:hover {
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 /* Small devices (phones) */
-@media (max-width: 767px) and (orientation: landscape) {
+@media (min-width: 300px) and (max-width: 667px) and (orientation: portrait) {
+
+}
+
+@media (min-width: 300px) and (max-width: 667px) and (orientation: landscape) {
+
+}
+/* Small devices (phones) */
+@media (min-width: 668px) and (max-width: 767px) and (orientation: landscape) {
     .showcontents {
         display: inline-block;
         padding-top: 50px;
@@ -347,7 +355,7 @@ fieldset[disabled] .btn-custom:hover {
         padding-top: 70px;
     }
 }
-@media (max-width: 767px) and (orientation: portrait) {
+@media (min-width: 668px) and (max-width: 767px) and (orientation: portrait) {
     .trackpic {}
 
     .showcontents {
@@ -493,7 +501,7 @@ fieldset[disabled] .btn-custom:hover {
     .passwordsNewForm {
         padding-top: 300px;
     }
-    
+
 }
 /* ---------------------------------------------------- */
 /* Large devices (Laptops (and large resolution tablets), 1025px to 1439px) */

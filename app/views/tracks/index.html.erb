@@ -4,7 +4,7 @@
               <div class="row">
                   <% @tracks.each do |track| %>
                   <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-                      <div class="thumbnail">
+                      <div class="rounded">
                           <%= link_to (image_tag track.image.url(:medium), class: 'image'), track %>
                       </div>
                   </div>
